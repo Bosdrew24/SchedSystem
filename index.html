@@ -299,7 +299,7 @@ th { background: #1e293b; color: #fff; text-align: left; padding: 10px; font-wei
 th:first-child { border-top-left-radius: 8px; width: 110px; }
 @media (min-width: 640px) { th:first-child { width: 130px; } }
 th:last-child { border-top-right-radius: 8px; }
-th.friday { background: #92400e; }
+th.friday { background: #92400e; text-align: center; vertical-align: middle; display: table-cell; line-height: 1.3; }
 tbody tr { border-bottom: 1px solid #f1f5f9; }
 .time-cell { padding: 10px; vertical-align: top; font-weight: 600; color: #334155; font-size: 12px; }
 @media (min-width: 640px) { .time-cell { padding: 12px; font-size: 13px; } }
@@ -328,6 +328,10 @@ tbody tr { border-bottom: 1px solid #f1f5f9; }
  .responsive-table.show-col-3 td:nth-child(5),
  .responsive-table.show-col-4 th:nth-child(6),
  .responsive-table.show-col-4 td:nth-child(6) { display: table-cell !important; }
+}
+.responsive-table th {
+  text-align: center;       
+  vertical-align: middle;  
 }
 .auth-container { max-width: 400px; margin: 20px auto; background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
 @media (min-width: 640px) { .auth-container { margin: 40px auto; padding: 32px; } }
@@ -589,8 +593,8 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "BS5MA - Morning Session",
       slots: ["7:00 - 8:00", "8:00 - 9:00", "9:00 - 10:00", "10:00 - 11:00", "11:00 - 12:00", "12:00 - 01:00"],
       cells: {
-        "0-0": { subject: "CS315", professor: "M.DLSANTOS", room: "106" },
-        "1-0": { subject: "CS315", professor: "M.DLSANTOS", room: "106" },
+        "0-0": { subject: "CS315", professor: "M.DLSantos", room: "106" },
+        "1-0": { subject: "CS315", professor: "M.DLSantos", room: "106" },
         "2-0": { subject: "GE11", professor: "R.Villanueva", room: "106" },
         "3-0": { subject: "GE11", professor: "R.Villanueva", room: "106" },
         "4-0": { subject: "GE11", professor: "R.Villanueva", room: "106" },
@@ -605,15 +609,15 @@ document.addEventListener("DOMContentLoaded", () => {
         "3-2": { subject: "CC316", professor: "X.Plata", room: "CL1" },
         "4-2": { subject: "CC316", professor: "X.Plata", room: "CL1" },
         "5-2": { subject: "CSE311", professor: "X.Plata", room: "CL1" },
-        "0-3": { subject: "CS317", professor: "M.DLSANTOS", room: "106" },
-        "1-3": { subject: "CS317", professor: "M.DLSANTOS", room: "106" },
+        "0-3": { subject: "CS317", professor: "M.DLSantos", room: "106" },
+        "1-3": { subject: "CS317", professor: "M.DLSantos", room: "106" },
         "2-3": { subject: "CS316", professor: "X.Plata", room: "106" },
         "3-3": { subject: "CS316", professor: "X.Plata", room: "106" },
         "4-3": { subject: "CSE311", professor: "X.Plata", room: "106" },
         "5-3": { subject: "CC316", professor: "X.Plata", room: "CL1" },
-        "0-4": { subject: "CS315", professor: "M.DLSANTOS", room: "" },
+        "0-4": { subject: "CS315", professor: "M.DLSantos", room: "" },
         "1-4": { subject: "CIS313", professor: "L.Abanag", room: "" },
-        "2-4": { subject: "CS317", professor: "M.DLSANTOS", room: "" },
+        "2-4": { subject: "CS317", professor: "M.DLSantos", room: "" },
         "3-4": { subject: "CC316", professor: "X.Plata", room: "" },
         "4-4": { subject: "CSE311", professor: "X.Plata", room: "" }
       }
@@ -780,8 +784,8 @@ document.addEventListener("DOMContentLoaded", () => {
         "5-3": { subject: "ENT4", professor: "G.Maula", room: "107" },
         "2-4": { subject: "GE7", professor: "E.Borlas", room: "" },
         "3-4": { subject: "GE8", professor: "E.Borlas", room: "" },
-        "4-4": { subject: "ENT3", professor: "GMAULA", room: "" },
-        "5-4": { subject: "ENT4", professor: "GMAULA", room: "" },
+        "4-4": { subject: "ENT3", professor: "G.Maula", room: "" },
+        "5-4": { subject: "ENT4", professor: "G.Maula", room: "" },
         "6-4": { subject: "GE9", professor: "J.Capitin", room: "" }
       }
     },
